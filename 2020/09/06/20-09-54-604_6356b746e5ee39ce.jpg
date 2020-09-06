@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>ircmaxell&#39;s Blog</title>
+  <meta name="description" content="A blog about PHP, Security, Performance and general web application development.">
+  <meta name="keywords" content>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/">
+  <link rel="alternate" href="/feeds/posts/default/index.xml" title="ircmaxell's Blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="description" content="A blog about PHP, Security, Performance and general web application development.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ircmaxell&#39;s Blog">
+<meta property="og:url" content="https://blog.ircmaxell.com/index.html">
+<meta property="og:site_name" content="ircmaxell&#39;s Blog">
+<meta property="og:description" content="A blog about PHP, Security, Performance and general web application development.">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ircmaxell&#39;s Blog">
+<meta name="twitter:description" content="A blog about PHP, Security, Performance and general web application development.">
+    
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web|Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="/style_1556675073731.css">
+<link rel="stylesheet" href="/css/prism-xonokai.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+</html>
+<body id="ircmaxell-blog">
+  <header class="l_header">
+	<div class="wrapper">
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href="/">
+				ircmaxell's Blog
+			</a>
+			<div class="menu">
+				<ul class="h-list">
+					
+						<li>
+						  
+									<a class="flat-box nav-home" href="/">
+							
+								Home
+							</a>
+						</li>
+					
+						<li>
+						  
+									<a href="https://github.com/ircmaxell" class="flat-box nav-github" rel="noopener nofollow" target="_blank">
+							
+								GitHub
+							</a>
+						</li>
+					
+						<li>
+						  
+									<a href="https://github.com/ircmaxell/resume" class="flat-box nav-Resume" rel="noopener nofollow" target="_blank">
+							
+								Resume
+							</a>
+						</li>
+					
+				</ul>
+				<div class="underline"></div>
+			</div>
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search">
+						<span class="icon icon-search"></span>
+					</form>
+				</div>
+			
+			<ul class="switcher h-list">
+				
+					<li class="s-search"><a href="javascript:void(0)"><span class="icon icon-search flat-box"></span></a></li>
+				
+				<li class="s-menu"><a href="javascript:void(0)"><span class="icon icon-menu flat-box"></span></a></li>
+			</ul>
+		</div>
+		
+		<div class="nav-sub container container--flex">
+			<a class="logo" href="javascript:void(0)">
+				Word of Forks
+			</a>
+
+			<ul class="switcher h-list">
+				<li class="s-comment"><a href="javascript:void(0)"><span class="icon icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class="s-top"><a href="javascript:void(0)"><span class="icon icon-arrow_upward flat-box"></span></a></li>
+				<li class="s-toc"><a href="javascript:void(0)"><span class="icon icon-format_list_numbered flat-box"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<aside class="menu-phone">
+	<nav>
+		
+			<a href="/" class="nav-home nav">
+						
+				Home
+			</a>
+		
+			<a href="https://github.com/ircmaxell" class="nav-github nav" rel="noopener nofollow" target="_blank">
+						
+				GitHub
+			</a>
+		
+			<a href="https://github.com/ircmaxell/resume" class="nav-Resume nav" rel="noopener nofollow" target="_blank">
+						
+				Resume
+			</a>
+		
+	</nav>
+</aside>
+
+  <div class="l_body">
+    <div class='container clearfix'>
+      <div class='l_main'>
+        
+<section class="post-list">
+	
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2019/04/compilers-ffi.html">
+        A PHP Compiler, aka The FFI Rabbit Hole
+      </a>
+    </h2>
+    
+    <time>
+      Apr 22, 2019
+    </time>
+		
+  </section>
+  <section class="article typo">
+	  <p>It’s no secret that I’m into building toy compilers and programming languages. Today I’m introducing something that’s not a toy (I hope). Today, I’m introducing <a href="https://github.com/ircmaxell/php-compiler" target="_blank" rel="noopener">php-compiler</a> (among many other projects). My hope is that these projects will grow from experimental status into fully production ready systems.<br>
+
+    
+	  <div class="readmore">
+      <a href="/2019/04/compilers-ffi.html">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/PHP/">PHP</a>
+      
+        <a href="/tags/Open-Source/">Open Source</a>
+      
+        <a href="/tags/Optimization/">Optimization</a>
+      
+        <a href="/tags/Compiler/">Compiler</a>
+      
+        <a href="/tags/HHVM/">HHVM</a>
+      
+        <a href="/tags/libjit/">libjit</a>
+      
+        <a href="/tags/Performance/">Performance</a>
+      
+        <a href="/tags/Recki-CT/">Recki-CT</a>
+      
+        <a href="/tags/libgccjit/">libgccjit</a>
+      
+        <a href="/tags/llvm/">llvm</a>
+      
+	  </div>
+    
+  </p></section>
+</article>
+    </div>
+  
+        <div class="post-wrapper">
+            <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-ej+6g-15-c4+qd" data-ad-client="ca-pub-8322654260452484" data-ad-slot="1226052734"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2018/06/protecting-rails-xss.html">
+        Protecting Against XSS In RAILS - JavaScript Contexts
+      </a>
+    </h2>
+    
+    <time>
+      Jun 21, 2018
+    </time>
+		
+    
+    <div class="cats">
+        <a href="/categories/Security/">Security</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <p>Recently my team was working to implement <a href="https://github.com/presidentbeef/brakeman" target="_blank" rel="noopener">Brakeman</a> in our CI processes to automatically scan our codebase for security vulnerabilities. Among a few other issues, it identified a handful of similar XSS vulnerabilities of a similar pattern:</p>
+<pre><code class="html">&lt;script type=&quot;text/javascript&quot;&gt;
+  var FOO = &quot;&lt;%= raw whatever %&gt;&quot;;
+  ReactDOM.render(&lt;Blah
+    foo={window.FOO}
+  /&gt;, document.getElementById(&#39;some_place&#39;));
+&lt;/script&gt;
+</code></pre>
+<p>This is a pretty straight forward vulnerability, since passing <code>&quot;; alert(1); &quot;</code> for <code>whatever</code> will result in the code being rendered as <code>var FOO = &quot;&quot;; alert(1); &quot;&quot;;</code> which isn’t good.</p>
+<p>The fix, isn’t so simple. I’ve searched high and low, and couldn’t find a single source that had the correct solution to the problem. So here it is…<br>
+
+    
+	  <div class="readmore">
+      <a href="/2018/06/protecting-rails-xss.html">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/Programming/">Programming</a>
+      
+        <a href="/tags/Security/">Security</a>
+      
+        <a href="/tags/XSS/">XSS</a>
+      
+        <a href="/tags/Ruby-On-Rails/">Ruby-On-Rails</a>
+      
+        <a href="/tags/Ruby/">Ruby</a>
+      
+	  </div>
+    
+  </p></section>
+</article>
+    </div>
+  
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2017/10/disclosure-wordpress-wpdb-sql-injection-technical.html">
+        Disclosure: WordPress WPDB SQL Injection - Technical
+      </a>
+    </h2>
+    
+    <time>
+      Oct 31, 2017
+    </time>
+		
+    
+    <div class="cats">
+        <a href="/categories/Security/">Security</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <p>Today, a significant SQL-Injection vulnerability was fixed in WordPress 4.8.3. Before reading further, if you haven’t updated yet stop right now and update.</p>
+<p>The foundations of this vulnerability was reported via Hacker-One on September 20th, 2017.</p>
+<p>This post will detail the technical vulnerability as well as how to mitigate it. There is another post which deals with the <a href="/2017/10/disclosure-wordpress-wpdb-sql-injection-background.html">background and time-lines</a>.<br>
+
+    
+	  <div class="readmore">
+      <a href="/2017/10/disclosure-wordpress-wpdb-sql-injection-technical.html">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/PHP/">PHP</a>
+      
+        <a href="/tags/Security/">Security</a>
+      
+        <a href="/tags/Open-Source/">Open Source</a>
+      
+        <a href="/tags/Disclosure/">Disclosure</a>
+      
+        <a href="/tags/SQL-Injection/">SQL Injection</a>
+      
+	  </div>
+    
+  </p></section>
+</article>
+    </div>
+  
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2017/10/disclosure-wordpress-wpdb-sql-injection-background.html">
+        Disclosure: WordPress WPDB SQL Injection - Background
+      </a>
+    </h2>
+    
+    <time>
+      Oct 27, 2017
+    </time>
+		
+    
+    <div class="cats">
+        <a href="/categories/Security/">Security</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <p>Today, a significant SQL-Injection vulnerability was fixed in WordPress 4.8.3. Before reading further, if you haven’t updated yet stop right now and update.</p>
+<p>The foundations of this vulnerability was reported via Hacker-One on September 20th, 2017.</p>
+<p>This post will detail the background on the vulnerability as well as why I publicly threatened to Fully Disclose. There is another post which deals with the <a href="/2017/10/disclosure-wordpress-wpdb-sql-injection-technical.html">technical vulnerability</a>.<br>
+
+    
+	  <div class="readmore">
+      <a href="/2017/10/disclosure-wordpress-wpdb-sql-injection-background.html">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/PHP/">PHP</a>
+      
+        <a href="/tags/Security/">Security</a>
+      
+        <a href="/tags/Open-Source/">Open Source</a>
+      
+        <a href="/tags/Disclosure/">Disclosure</a>
+      
+        <a href="/tags/SQL-Injection/">SQL Injection</a>
+      
+	  </div>
+    
+  </p></section>
+</article>
+    </div>
+  
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2017/07/ponderings-on-odoriferous-syntactical.html">
+        Ponderings on Odoriferous Syntactical Constructifications
+      </a>
+    </h2>
+    
+    <time>
+      Jul 31, 2017
+    </time>
+		
+    
+    <div class="cats">
+        <a href="/categories/Programming/">Programming</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <p>(AKA: “Thoughts on code smells” and how <em>“high brow”</em> they have become)</p>
+<p>We have a habit of talking about “code smells” to indicate patterns and practices that our experience has shown can be problematic. Many of these “smells” are backed by a lot of data and really are legitimate problems to avoid. These are constructs and tools that often have few legitimate uses. But many so called “smells” really aren’t significantly bad. Let’s dive into some of the nuance here and talk a bit about why our word choice matters.<br>
+
+    
+	  <div class="readmore">
+      <a href="/2017/07/ponderings-on-odoriferous-syntactical.html">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/PHP/">PHP</a>
+      
+        <a href="/tags/Anti-Pattern/">Anti-Pattern</a>
+      
+        <a href="/tags/Architecture/">Architecture</a>
+      
+        <a href="/tags/Object-Oriented-Programming/">Object Oriented Programming</a>
+      
+        <a href="/tags/Programming/">Programming</a>
+      
+        <a href="/tags/Rant/">Rant</a>
+      
+        <a href="/tags/Design/">Design</a>
+      
+        <a href="/tags/Functional-Programming/">Functional Programming</a>
+      
+	  </div>
+    
+  </p></section>
+</article>
+    </div>
+  
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2017/02/building-8-bit-computer.html">
+        Building an 8-bit Computer
+      </a>
+    </h2>
+    
+    <time>
+      Feb 8, 2017
+    </time>
+		
+    
+    <div class="cats">
+        <a href="/categories/Hobby/">Hobby</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <p>I have been building a computer. Not assembling components, but actually designing and wiring it from scratch onto prototyping breadboards. I’ve decided to start writing about the project here on my blog. I have no idea how many posts this will wind up being, or if there even will be others. Let me start by telling you what I’m building.<br>
+
+    
+	  <div class="readmore">
+      <a href="/2017/02/building-8-bit-computer.html">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/Programming/">Programming</a>
+      
+        <a href="/tags/8-bit-Computer/">8-bit Computer</a>
+      
+        <a href="/tags/Arduino/">Arduino</a>
+      
+        <a href="/tags/Computer/">Computer</a>
+      
+        <a href="/tags/Design/">Design</a>
+      
+        <a href="/tags/Hardware/">Hardware</a>
+      
+        <a href="/tags/Hobby/">Hobby</a>
+      
+        <a href="/tags/Logic-Gates/">Logic Gates</a>
+      
+        <a href="/tags/Passion/">Passion</a>
+      
+	  </div>
+    
+  </p></section>
+</article>
+    </div>
+  
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2017/01/trust.html">
+        Trust
+      </a>
+    </h2>
+    
+    <time>
+      Jan 12, 2017
+    </time>
+		
+    
+    <div class="cats">
+        <a href="/categories/Security/">Security</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <p>Stop and take a moment to think about how much trust is required to live your everyday life. Every single aspect of your life is built up on layer after layer of trust, it’s nothing short of staggering. Different aspects of life will contain different levels of trust, with some being very guarded and some being very lax. We don’t often talk about this trust and we often make the blind assumption that trust is inherently a bad thing. That’s most definitely not the case. Let’s explore why.</p>
+
+    
+	  <div class="readmore">
+      <a href="/2017/01/trust.html">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/PHP/">PHP</a>
+      
+        <a href="/tags/Security/">Security</a>
+      
+        <a href="/tags/Thoughts/">Thoughts</a>
+      
+        <a href="/tags/Trust/">Trust</a>
+      
+	  </div>
+    
+  </section>
+</article>
+    </div>
+  
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2016/05/all-about-middleware.html">
+        All About Middleware
+      </a>
+    </h2>
+    
+    <time>
+      May 20, 2016
+    </time>
+		
+    
+    <div class="cats">
+        <a href="/categories/Architecture/">Architecture</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <p>Last week, <a href="https://github.com/php-fig/fig-standards/pull/755" target="_blank" rel="noopener">a proposal</a> to standardize middleware for <a href="http://www.php-fig.org/psr/psr-7/" target="_blank" rel="noopener">PSR-7</a> was introduced to the PHP-FIG. The general concept of middleware is not a new one, and has been in use in the PHP world for many years. Several people have raised significant concerns with the proposal, which have gone completely unheeded by the author. Let me go through the most major of these concerns, as well as show what a better proposal might look like.</p>
+<p>*Note: All code that will be used in this post is real-world code found in the wild (and linked to) with one exception (<code>X-Powered-By</code>).</p>
+
+    
+	  <div class="readmore">
+      <a href="/2016/05/all-about-middleware.html">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/PHP/">PHP</a>
+      
+        <a href="/tags/Object-Oriented-Programming/">Object Oriented Programming</a>
+      
+        <a href="/tags/Rant/">Rant</a>
+      
+        <a href="/tags/PHP-FIG/">PHP-FIG</a>
+      
+        <a href="/tags/Design-Patterns/">Design Patterns</a>
+      
+        <a href="/tags/Open-Standards/">Open Standards</a>
+      
+        <a href="/tags/Middleware/">Middleware</a>
+      
+	  </div>
+    
+  </section>
+</article>
+    </div>
+  
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2015/11/simple-easy-risk-and-change.html">
+        Simple, Easy, Risk and Change
+      </a>
+    </h2>
+    
+    <time>
+      Nov 2, 2015
+    </time>
+		
+    
+    <div class="cats">
+        <a href="/categories/Programming/">Programming</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <p>I’ve been thinking a lot about change lately. Things finally resonated to me after listening to <a href="https://www.youtube.com/watch?v=7gv6oK8nAzE" target="_blank" rel="noopener">Uncle Bob Martin on No Capes</a>. He made an amazingly interesting point about change and different methods for minimizing the risk over time of change.</p>
+<p>I want to share some of what I’ve been thinking about along those lines. What follows is a collection of some of my evolving thoughts relating to change and complexity. Let me know your thoughts in the comments.</p>
+
+    
+	  <div class="readmore">
+      <a href="/2015/11/simple-easy-risk-and-change.html">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/PHP/">PHP</a>
+      
+        <a href="/tags/Architecture/">Architecture</a>
+      
+        <a href="/tags/Best-Practice/">Best Practice</a>
+      
+        <a href="/tags/Framework/">Framework</a>
+      
+        <a href="/tags/Programming/">Programming</a>
+      
+        <a href="/tags/Beyond/">Beyond</a>
+      
+	  </div>
+    
+  </section>
+</article>
+    </div>
+  
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2015/05/prefix-trees-and-parsers.html">
+        Prefix Trees and Parsers
+      </a>
+    </h2>
+    
+    <time>
+      May 18, 2015
+    </time>
+		
+    
+    <div class="cats">
+        <a href="/categories/Programming/">Programming</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <p>In my <a href="http://blog.ircmaxell.com/2015/05/tries-and-lexers.html">last post, <em>Tries and Lexers</em></a>, I talked about an experiment I was doing related to parsing of JavaScript code. By the end of the post I had shifted to wanting to build a HTTP router using the techniques that I learned. Let’s continue where we left off…</p>
+
+    
+	  <div class="readmore">
+      <a href="/2015/05/prefix-trees-and-parsers.html">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/PHP/">PHP</a>
+      
+        <a href="/tags/Performance/">Performance</a>
+      
+        <a href="/tags/Data-Structures/">Data Structures</a>
+      
+        <a href="/tags/Lexer/">Lexer</a>
+      
+        <a href="/tags/Parser/">Parser</a>
+      
+        <a href="/tags/Radix-Tree/">Radix Tree</a>
+      
+        <a href="/tags/Routing/">Routing</a>
+      
+        <a href="/tags/Trie/">Trie</a>
+      
+	  </div>
+    
+  </section>
+</article>
+    </div>
+  
+</section>
+
+
+  <nav id="page-nav">
+    
+    
+    <a class="next" rel="next" href="/page/2/">
+      <span class="text">Next</span>
+      <span class="icon icon-chevron-right"></span>
+    </a>
+    
+  </nav>
+  
+
+      </div>
+      <aside class='l_side'>
+        
+  <section class="m_widget about">
+  <img class="avatar waves-image" src="/images/anthony_avatar.jpg">
+  <div class="header">Anthony Ferrara</div>
+  <div class="content">
+    <div class="desc">
+      Technologist, leader and purveyor of rants. All opinions my own.
+    </div>
+    <div class="social">
+      <dl>
+        <dt>Email</dt><dd><a href="mailto:blog@ircmaxell.com">blog@ircmaxell.com</a></dd>
+        <dt>Resume<dd><a href="https://www.github.com/ircmaxell/resume" rel="noopener noreferrer" target="_blank">On GitHub</a></dd>
+        <dt>GitHub</dt><dd><a href="https://www.github.com/ircmaxell" rel="noopener noreferrer" target="_blank">ircmaxell</a></dd>
+        <dt>Twitter</dt><dd><a href="https://www.twitter.com/ircmaxell" rel="noopener noreferrer" target="_blank">@ircmaxell</a></dd>
+        <dt>YouTube</dt><dd><a href="https://www.youtube.com/user/ircmaxell" rel="noopener noreferrer" target="_blank">ircmaxell</a></dd>
+        <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/ircmaxell" rel="noopener noreferrer" target="_blank">ircmaxell</a></dd>
+      </dt></dl>
+    </div>
+    <div class="job">
+      
+    </div>
+  </div>
+</section>
+  
+      <section class="m_widget ad">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-8d+2n-gm+b5+tt" data-ad-client="ca-pub-8322654260452484" data-ad-slot="4698393880"></ins>
+        <noscript>
+          <div class="noads content">If you're using an adblocker, please consider supporting this site via <a href="https://www.patreon.com/ircmaxell">Patreon</a> or <a href="https://paypal.me/ircmaxell">PayPal</a></div>
+        </noscript>
+        <div id="ebeg" class="noads content" style="display:none">If you're using an adblocker, please consider supporting this site via <a href="https://www.patreon.com/ircmaxell">Patreon</a> or <a href="https://paypal.me/ircmaxell">PayPal</a></div>
+        <script>
+            adsbygoogle = window.adsbygoogle || [];
+            adsbygoogle.push({});
+            document.getElementById('ebeg').style.display = "block";
+            adsbygoogle.onload = function() {
+                document.getElementById('ebeg').style.display = "none";
+            };
+        </script>
+      </section>
+    
+
+  <section class="m_widget categories">
+<div class="header">Categories</div>
+<div class="content">
+    
+    <ul class="entry">
+    
+        <li><a class="flat-box" href="/categories/Architecture/"><div class="name">Architecture</div><div class="badget">14</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Community/"><div class="name">Community</div><div class="badget">1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Hobby/"><div class="name">Hobby</div><div class="badget">2</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Meta/"><div class="name">Meta</div><div class="badget">20</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Open-Source/"><div class="name">Open Source</div><div class="badget">5</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Other/"><div class="name">Other</div><div class="badget">3</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/PHP/"><div class="name">PHP</div><div class="badget">13</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Performance/"><div class="name">Performance</div><div class="badget">1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Process/"><div class="name">Process</div><div class="badget">1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Programming/"><div class="name">Programming</div><div class="badget">22</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Rant/"><div class="name">Rant</div><div class="badget">14</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Security/"><div class="name">Security</div><div class="badget">25</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Slides/"><div class="name">Slides</div><div class="badget">15</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Testing/"><div class="name">Testing</div><div class="badget">2</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Video/"><div class="name">Video</div><div class="badget">12</div></a></li>
+    
+    </ul>
+    
+</div>
+</section>
+  
+
+  
+<div class="m_widget tagcloud">
+    <div class="header">Tags</div>
+    <div class="content">
+        <a href="/tags/8-bit-Computer/" style="font-size: 14px; color: #808080">8-bit Computer</a> <a href="/tags/API/" style="font-size: 14px; color: #808080">API</a> <a href="/tags/Agile/" style="font-size: 14px; color: #808080">Agile</a> <a href="/tags/Analysis/" style="font-size: 14px; color: #808080">Analysis</a> <a href="/tags/Anatomy-of-an-Attack/" style="font-size: 14.27px; color: #7a7a7a">Anatomy of an Attack</a> <a href="/tags/Answers/" style="font-size: 14.55px; color: #747474">Answers</a> <a href="/tags/Anti-Paradigm/" style="font-size: 14.27px; color: #7a7a7a">Anti-Paradigm</a> <a href="/tags/Anti-Pattern/" style="font-size: 15.64px; color: #5d5d5d">Anti-Pattern</a> <a href="/tags/Architecture/" style="font-size: 17.82px; color: #2f2f2f">Architecture</a> <a href="/tags/Arduino/" style="font-size: 14px; color: #808080">Arduino</a> <a href="/tags/Autoloading/" style="font-size: 14px; color: #808080">Autoloading</a> <a href="/tags/BCrypt/" style="font-size: 14.55px; color: #747474">BCrypt</a> <a href="/tags/Best-Practice/" style="font-size: 19.18px; color: #111">Best Practice</a> <a href="/tags/Beyond/" style="font-size: 15.09px; color: #696969">Beyond</a> <a href="/tags/Books/" style="font-size: 14px; color: #808080">Books</a> <a href="/tags/Build/" style="font-size: 14px; color: #808080">Build</a> <a href="/tags/CSRF/" style="font-size: 14.27px; color: #7a7a7a">CSRF</a> <a href="/tags/Career/" style="font-size: 14px; color: #808080">Career</a> <a href="/tags/Change/" style="font-size: 14.82px; color: #6f6f6f">Change</a> <a href="/tags/Closures/" style="font-size: 14px; color: #808080">Closures</a> <a href="/tags/Code-Review/" style="font-size: 14.55px; color: #747474">Code Review</a> <a href="/tags/Comments/" style="font-size: 14px; color: #808080">Comments</a> <a href="/tags/Community/" style="font-size: 16.18px; color: #515151">Community</a> <a href="/tags/Compiler/" style="font-size: 14.55px; color: #747474">Compiler</a> <a href="/tags/Composition/" style="font-size: 14px; color: #808080">Composition</a> <a href="/tags/Computer/" style="font-size: 14px; color: #808080">Computer</a> <a href="/tags/Conference/" style="font-size: 16.45px; color: #4c4c4c">Conference</a> <a href="/tags/CryptLib/" style="font-size: 14.55px; color: #747474">CryptLib</a> <a href="/tags/Cryptography/" style="font-size: 15.64px; color: #5d5d5d">Cryptography</a> <a href="/tags/Data-Structures/" style="font-size: 14.27px; color: #7a7a7a">Data Structures</a> <a href="/tags/Database/" style="font-size: 14.27px; color: #7a7a7a">Database</a> <a href="/tags/Dependency-Injection/" style="font-size: 14.82px; color: #6f6f6f">Dependency Injection</a> <a href="/tags/Design/" style="font-size: 14.27px; color: #7a7a7a">Design</a> <a href="/tags/Design-Patterns/" style="font-size: 17.27px; color: #3a3a3a">Design Patterns</a> <a href="/tags/Disclosure/" style="font-size: 14.55px; color: #747474">Disclosure</a> <a href="/tags/Drupal/" style="font-size: 14px; color: #808080">Drupal</a> <a href="/tags/Economics/" style="font-size: 14px; color: #808080">Economics</a> <a href="/tags/Education/" style="font-size: 15.36px; color: #636363">Education</a> <a href="/tags/Email-Response/" style="font-size: 14.55px; color: #747474">Email Response</a> <a href="/tags/Engineering/" style="font-size: 14px; color: #808080">Engineering</a> <a href="/tags/Events/" style="font-size: 14.55px; color: #747474">Events</a> <a href="/tags/Exceptions/" style="font-size: 14px; color: #808080">Exceptions</a> <a href="/tags/External-Post/" style="font-size: 14px; color: #808080">External-Post</a> <a href="/tags/Forward-Compatibility/" style="font-size: 14.27px; color: #7a7a7a">Forward Compatibility</a> <a href="/tags/Framework/" style="font-size: 16.45px; color: #4c4c4c">Framework</a> <a href="/tags/Functional-Programming/" style="font-size: 14.82px; color: #6f6f6f">Functional Programming</a> <a href="/tags/Generators/" style="font-size: 14px; color: #808080">Generators</a> <a href="/tags/Global-Variables/" style="font-size: 14px; color: #808080">Global Variables</a> <a href="/tags/Good-Enough/" style="font-size: 17.82px; color: #2f2f2f">Good Enough</a> <a href="/tags/Google-Glass/" style="font-size: 14px; color: #808080">Google Glass</a> <a href="/tags/HHVM/" style="font-size: 14.55px; color: #747474">HHVM</a> <a href="/tags/Hardware/" style="font-size: 14px; color: #808080">Hardware</a> <a href="/tags/Hobby/" style="font-size: 14px; color: #808080">Hobby</a> <a href="/tags/Inconsistencies/" style="font-size: 14.82px; color: #6f6f6f">Inconsistencies</a> <a href="/tags/Internet/" style="font-size: 14.27px; color: #7a7a7a">Internet</a> <a href="/tags/Interviews/" style="font-size: 14px; color: #808080">Interviews</a> <a href="/tags/Iterators/" style="font-size: 14px; color: #808080">Iterators</a> <a href="/tags/Javascript/" style="font-size: 14.27px; color: #7a7a7a">Javascript</a> <a href="/tags/Jenkins/" style="font-size: 14px; color: #808080">Jenkins</a> <a href="/tags/JitFu/" style="font-size: 14px; color: #808080">JitFu</a> <a href="/tags/Language-Agnostic/" style="font-size: 18.64px; color: #1d1d1d">Language Agnostic</a> <a href="/tags/Language-Design/" style="font-size: 14px; color: #808080">Language-Design</a> <a href="/tags/Large-Scale-Applications/" style="font-size: 14.27px; color: #7a7a7a">Large Scale Applications</a> <a href="/tags/Learning/" style="font-size: 18.36px; color: #232323">Learning</a> <a href="/tags/Lexer/" style="font-size: 14.27px; color: #7a7a7a">Lexer</a> <a href="/tags/Library/" style="font-size: 16.18px; color: #515151">Library</a> <a href="/tags/Logic/" style="font-size: 14px; color: #808080">Logic</a> <a href="/tags/Logic-Gates/" style="font-size: 14px; color: #808080">Logic Gates</a> <a href="/tags/MVC/" style="font-size: 14.55px; color: #747474">MVC</a> <a href="/tags/Mathematics/" style="font-size: 14.27px; color: #7a7a7a">Mathematics</a> <a href="/tags/Meta/" style="font-size: 15.91px; color: #575757">Meta</a> <a href="/tags/Micro-Framework/" style="font-size: 14.55px; color: #747474">Micro Framework</a> <a href="/tags/Middleware/" style="font-size: 14px; color: #808080">Middleware</a> <a href="/tags/Monads/" style="font-size: 14px; color: #808080">Monads</a> <a href="/tags/Object-Oriented-Programming/" style="font-size: 18.36px; color: #232323">Object Oriented Programming</a> <a href="/tags/Open-Source/" style="font-size: 18.09px; color: #292929">Open Source</a> <a href="/tags/Open-Standards/" style="font-size: 14.82px; color: #6f6f6f">Open Standards</a> <a href="/tags/Optimization/" style="font-size: 14.82px; color: #6f6f6f">Optimization</a> <a href="/tags/PHP/" style="font-size: 20px; color: #000">PHP</a> <a href="/tags/PHP-Source-Code-For-PHP-Developers-Series/" style="font-size: 14.82px; color: #6f6f6f">PHP Source Code For PHP Developers Series</a> <a href="/tags/PHP-FIG/" style="font-size: 14.55px; color: #747474">PHP-FIG</a> <a href="/tags/PHP-Internals/" style="font-size: 17.27px; color: #3a3a3a">PHP-Internals</a> <a href="/tags/PHP-Versions/" style="font-size: 14.27px; color: #7a7a7a">PHP-Versions</a> <a href="/tags/Parser/" style="font-size: 14.27px; color: #7a7a7a">Parser</a> <a href="/tags/Passion/" style="font-size: 14px; color: #808080">Passion</a> <a href="/tags/Password-Hashing/" style="font-size: 16.45px; color: #4c4c4c">Password-Hashing</a> <a href="/tags/PasswordLib/" style="font-size: 14.82px; color: #6f6f6f">PasswordLib</a> <a href="/tags/Performance/" style="font-size: 15.09px; color: #696969">Performance</a> <a href="/tags/Philosophy/" style="font-size: 16.73px; color: #464646">Philosophy</a> <a href="/tags/Presentation/" style="font-size: 17.55px; color: #343434">Presentation</a> <a href="/tags/Procedural-Programming/" style="font-size: 14.82px; color: #6f6f6f">Procedural Programming</a> <a href="/tags/Programming/" style="font-size: 19.73px; color: #060606">Programming</a> <a href="/tags/Programming-With-Anthony/" style="font-size: 17px; color: #404040">Programming With Anthony</a> <a href="/tags/Promise/" style="font-size: 14px; color: #808080">Promise</a> <a href="/tags/Radix-Tree/" style="font-size: 14px; color: #808080">Radix Tree</a> <a href="/tags/Rainbow-Table/" style="font-size: 14.82px; color: #6f6f6f">Rainbow Table</a> <a href="/tags/Random/" style="font-size: 14px; color: #808080">Random</a> <a href="/tags/Rant/" style="font-size: 19.45px; color: #0c0c0c">Rant</a> <a href="/tags/Recki-CT/" style="font-size: 14.27px; color: #7a7a7a">Recki-CT</a> <a href="/tags/Response/" style="font-size: 14.27px; color: #7a7a7a">Response</a> <a href="/tags/Responsive-Design/" style="font-size: 14px; color: #808080">Responsive Design</a> <a href="/tags/Review/" style="font-size: 14px; color: #808080">Review</a> <a href="/tags/Routing/" style="font-size: 14px; color: #808080">Routing</a> <a href="/tags/Ruby/" style="font-size: 14px; color: #808080">Ruby</a> <a href="/tags/Ruby-On-Rails/" style="font-size: 14px; color: #808080">Ruby-On-Rails</a> <a href="/tags/SQL-Injection/" style="font-size: 14.55px; color: #747474">SQL Injection</a> <a href="/tags/Scalar/" style="font-size: 14px; color: #808080">Scalar</a> <a href="/tags/Scrum/" style="font-size: 14px; color: #808080">Scrum</a> <a href="/tags/Security/" style="font-size: 18.91px; color: #171717">Security</a> <a href="/tags/Sexism/" style="font-size: 14px; color: #808080">Sexism</a> <a href="/tags/Silly/" style="font-size: 14px; color: #808080">Silly</a> <a href="/tags/Slides/" style="font-size: 15.91px; color: #575757">Slides</a> <a href="/tags/StackOverflow/" style="font-size: 14.27px; color: #7a7a7a">StackOverflow</a> <a href="/tags/Templates/" style="font-size: 14px; color: #808080">Templates</a> <a href="/tags/Thoughts/" style="font-size: 14px; color: #808080">Thoughts</a> <a href="/tags/Timing-Attack/" style="font-size: 14px; color: #808080">Timing-Attack</a> <a href="/tags/Traits/" style="font-size: 14px; color: #808080">Traits</a> <a href="/tags/Trie/" style="font-size: 14.27px; color: #7a7a7a">Trie</a> <a href="/tags/Trolls/" style="font-size: 14px; color: #808080">Trolls</a> <a href="/tags/Trust/" style="font-size: 14px; color: #808080">Trust</a> <a href="/tags/Types/" style="font-size: 14.27px; color: #7a7a7a">Types</a> <a href="/tags/Unit-Testing/" style="font-size: 14.55px; color: #747474">Unit Testing</a> <a href="/tags/Video/" style="font-size: 17px; color: #404040">Video</a> <a href="/tags/WTF/" style="font-size: 14.55px; color: #747474">WTF</a> <a href="/tags/Web-Application-Security-Series/" style="font-size: 14.27px; color: #7a7a7a">Web Application Security Series</a> <a href="/tags/Web-Design/" style="font-size: 14px; color: #808080">Web Design</a> <a href="/tags/Weird-Behavior/" style="font-size: 14px; color: #808080">Weird Behavior</a> <a href="/tags/WordPress/" style="font-size: 14px; color: #808080">WordPress</a> <a href="/tags/Work/" style="font-size: 14px; color: #808080">Work</a> <a href="/tags/XSS/" style="font-size: 14.82px; color: #6f6f6f">XSS</a> <a href="/tags/Year-In-Review/" style="font-size: 14.55px; color: #747474">Year In Review</a> <a href="/tags/libgccjit/" style="font-size: 14px; color: #808080">libgccjit</a> <a href="/tags/libjit/" style="font-size: 14.27px; color: #7a7a7a">libjit</a> <a href="/tags/llvm/" style="font-size: 14px; color: #808080">llvm</a>
+    </div>
+</div>
+
+
+  
+
+      </aside>
+    </div>
+  </div>
+  <footer id="footer" class="clearfix">
+
+	<div class="social-wrapper">
+  	
+      
+        <a href="https://github.com/ircmaxell" class="social github" target="_blank" rel="external noopener">
+          <span class="icon icon-github"></span>
+        </a>
+      
+        <a href="https://twitter.com/ircmaxell" class="social twitter" target="_blank" rel="external noopener">
+          <span class="icon icon-twitter"></span>
+        </a>
+      
+        <a href="/rss.xml" class="social rss" target="_blank" rel="external noopener">
+          <span class="icon icon-rss"></span>
+        </a>
+      
+    
+  </div>
+  
+  <div>Copyright ©2011-2019 Anthony Ferrara, all rights reserved.</div>
+
+</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-677798-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-677798-8');
+</script>
+  
+<script>
+  var disqus_shortname = 'blog-ircmaxell';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+<script src="//cdn.bootcss.com/node-waves/0.7.6/waves.min.js"></script>
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
+</script>
+<script type="text/javascript" src="/js/search_1556675073731.js"></script>
+<script type="text/javascript" src="/js/app_1556675073731.js"></script>
+
+</body>
+</html>
